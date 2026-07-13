@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { Button } from "@/components/ui";
-import { ImpactStats } from "@/components/sections";
+import { ImpactStats, AboutSection } from "@/components/sections";
 
 const SLIDES = [
   {
@@ -178,6 +178,7 @@ export default function Home() {
     <>
       <Hero />
       <ImpactStats />
+      <AboutSection />
     </>
   );
 }

@@ -84,7 +84,7 @@ export function GoldDivider({ className = "" }: { className?: string }) {
    Full button system — primary, secondary, ghost, link, icon
    ======================================================================== */
 
-type ButtonVariant = "primary" | "secondary" | "ghost" | "link";
+type ButtonVariant = "primary" | "secondary" | "ghost" | "link" | "outline";
 type ButtonSize = "sm" | "md" | "lg";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -111,6 +111,7 @@ const variantClasses: Record<ButtonVariant, string> = {
   secondary: "btn-secondary",
   ghost: "btn-ghost",
   link: "btn-link",
+  outline: "btn-outline",
 };
 
 const sizeClasses: Record<ButtonSize, string> = {
