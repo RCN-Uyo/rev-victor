@@ -59,3 +59,6 @@ export {
   Container,
   AspectRatio,
 } from "./grid";
+
+// --- Custom UI ---
+export { AnimatedCounter } from "./animated-counter";

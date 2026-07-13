@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { Button } from "@/components/ui";
+import { ImpactStats } from "@/components/sections";
 
 const SLIDES = [
   {
@@ -23,7 +24,7 @@ const SLIDES = [
   },
 ];
 
-export default function Home() {
+function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -169,5 +170,14 @@ export default function Home() {
         </div>
       </motion.div>
     </section>
+  );
+}
+
+export default function Home() {
+  return (
+    <>
+      <Hero />
+      <ImpactStats />
+    </>
   );
 }
