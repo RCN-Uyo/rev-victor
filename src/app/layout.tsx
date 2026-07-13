@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Merriweather } from "next/font/google";
 import { Navbar } from "@/components/navigation";
 import { Footer } from "@/components/footer";
+import { LoadingScreen, ScrollProgress, BackToTop } from "@/components/layout";
 import "./globals.css";
 
 const merriweather = Merriweather({
@@ -62,6 +63,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${merriweather.variable} h-full`}>
       <body className="noise min-h-full flex flex-col">
+        {/* Loading Screen */}
+        <LoadingScreen />
+        
+        {/* Scroll Progress */}
+        <ScrollProgress />
+
         {/* Skip to main content — WCAG AA */}
         <a href="#main-content" className="skip-link">
           Skip to main content
@@ -71,9 +78,12 @@ export default function RootLayout({
         <Navbar />
 
         {/* Main Content */}
-        <main id="main-content" className="flex-1">
+        <main id="main-content" className="flex-1 relative">
           {children}
         </main>
+
+        {/* Back to top button */}
+        <BackToTop />
 
         {/* Footer */}
         <Footer />
