@@ -7,31 +7,31 @@ import { AnimatedCounter } from "@/components/ui/animated-counter";
 const STATS = [
   {
     id: 1,
-    value: 5000,
+    value: 1000,
     suffix: "+",
     label: "Lives Impacted",
     description: "Through global apostolic missions and local outreaches.",
   },
   {
     id: 2,
-    value: 1200,
+    value: 2,
     suffix: "+",
-    label: "Sermons Delivered",
-    description: "Hours of pure, unadulterated teaching of the word.",
+    label: "Major Convergences",
+    description: "The Eastern Watchmen and Prophetic Convergence.",
   },
   {
     id: 3,
     value: 50,
     suffix: "+",
-    label: "Conferences Hosted",
-    description: "Raising altars of righteousness across cities.",
+    label: "Partnerships",
+    description: "Organizations and individuals standing with the mandate.",
   },
   {
     id: 4,
-    value: 24,
-    suffix: "/7",
-    label: "Global Prayer Chain",
-    description: "Continuous intercession for the nations.",
+    value: 6,
+    suffix: "",
+    label: "Apostolic Centers",
+    description: "Established across strategic cities in the nation.",
   },
 ];
 

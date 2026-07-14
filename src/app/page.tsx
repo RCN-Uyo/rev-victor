@@ -9,18 +9,13 @@ import { ImpactStats, AboutSection, TimelineSection } from "@/components/section
 const SLIDES = [
   {
     id: "slide-1",
-    src: "https://picsum.photos/1920/1080?random=1",
-    alt: "Rev. Victor Anaele Ministering",
+    src: "/images/hero-1.png",
+    alt: "Rev. Victor Anaele Preaching",
   },
   {
     id: "slide-2",
-    src: "https://picsum.photos/1920/1080?random=2",
-    alt: "Remnant Christian Network Congregation",
-  },
-  {
-    id: "slide-3",
-    src: "https://picsum.photos/1920/1080?random=3",
-    alt: "Apostolic Conference Worship",
+    src: "/images/hero-2.jpeg",
+    alt: "RCN Uyo Congregation",
   },
 ];
 
