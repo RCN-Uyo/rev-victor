@@ -4,17 +4,17 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { Button } from "@/components/ui";
-import { ImpactStats, AboutSection, TimelineSection } from "@/components/sections";
+import { ImpactStats, AboutSection, MinistryJourney, RfsSection, MediaCentre, PartnershipSection } from "@/components/sections";
 
 const SLIDES = [
   {
     id: "slide-1",
-    src: "/images/hero-1.png",
+    src: "/images/hero-1.jpg",
     alt: "Rev. Victor Anaele Preaching",
   },
   {
     id: "slide-2",
-    src: "/images/hero-2.jpeg",
+    src: "/images/hero-2.jpg",
     alt: "RCN Uyo Congregation",
   },
 ];
@@ -174,7 +174,10 @@ export default function Home() {
       <Hero />
       <ImpactStats />
       <AboutSection />
-      <TimelineSection />
+      <MinistryJourney />
+      <RfsSection />
+      <MediaCentre />
+      <PartnershipSection />
     </>
   );
 }

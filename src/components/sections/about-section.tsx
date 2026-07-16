@@ -15,12 +15,12 @@ export function AboutSection() {
   return (
     <Section id="about" className="overflow-hidden py-24 md:py-32">
       <Container>
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16 items-center">
           
           {/* =========================================
               LEFT COLUMN: Editorial Image
               ========================================= */}
-          <div className="lg:col-span-5 relative w-full max-w-md mx-auto lg:max-w-none">
+          <div className="md:col-span-5 relative w-full max-w-md mx-auto md:max-w-none">
             <Reveal variants={slideInLeft}>
               <div className="relative aspect-[4/5] w-full rounded-2xl overflow-hidden border border-border/50 group">
                 {/* Decorative Gold Elements */}
@@ -45,7 +45,7 @@ export function AboutSection() {
           {/* =========================================
               RIGHT COLUMN: Biography Content
               ========================================= */}
-          <div className="lg:col-span-7 flex flex-col gap-8">
+          <div className="md:col-span-7 flex flex-col gap-8">
             
             {/* Header */}
             <Reveal variants={fadeUp}>

@@ -1,3 +1,7 @@
-export { ImpactStats } from "./impact-stats";
-export { AboutSection } from "./about-section";
-export { TimelineSection } from "./timeline-section";
+export * from "./impact-stats";
+export * from "./about-section";
+export * from "./ministry-journey";
+export * from "./timeline-section";
+export * from "./rfs-section";
+export * from "./media-centre";
+export * from "./partnership-section";
