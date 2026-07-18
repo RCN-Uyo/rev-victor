@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { Button } from "@/components/ui";
-import { ImpactStats, AboutSection, MinistryJourney, RfsSection, MediaCentre, PartnershipSection } from "@/components/sections";
+import { ImpactStats, AboutSection, MinistryJourney, RfsSection, MediaCentre } from "@/components/sections";
 
 const SLIDES = [
   {
@@ -134,11 +134,8 @@ function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.6 }}
           >
-            <Button variant="primary" size="lg" href="/book-appointment" className="shadow-gold-lg">
+            <Button variant="primary" size="lg" href="/book-appointment" className="shadow-gold-lg w-full sm:w-auto">
               Book Appointment
-            </Button>
-            <Button variant="secondary" size="lg" href="/partner" className="bg-black/20 backdrop-blur-sm border-white/20 hover:bg-black/40">
-              Become a Partner
             </Button>
           </motion.div>
         </motion.div>
@@ -177,7 +174,6 @@ export default function Home() {
       <MinistryJourney />
       <RfsSection />
       <MediaCentre />
-      <PartnershipSection />
     </>
   );
 }
