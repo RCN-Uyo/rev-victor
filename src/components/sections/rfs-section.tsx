@@ -99,8 +99,7 @@ export function RfsSection() {
                   variant="primary" 
                   size="lg" 
                   href="https://www.rfsuyo.com/registration"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  external
                 >
                   Enroll in RFS
                 </Button>

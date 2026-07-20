@@ -173,6 +173,7 @@ export function Navbar() {
   const [hoveredPath, setHoveredPath] = useState<string | null>(null);
   
   const pathname = usePathname();
+  if (pathname?.startsWith("/admin")) return null;
   const { scrollY } = useScroll();
 
   /* --- Scroll Effects Transforms --- */
