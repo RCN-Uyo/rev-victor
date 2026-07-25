@@ -41,7 +41,7 @@ export function MediaCentre() {
                 <iframe 
                   data-testid="embed-iframe"
                   style={{ borderRadius: '12px' }} 
-                  src="https://open.spotify.com/embed/show/6QIPH4mdOqeCOgtPI419SG?utm_source=generator&theme=0&si=760ce949c8e74189" 
+                  src="https://open.spotify.com/embed/show/6QIPH4mdOqeCOgtPI419SG?utm_source=generator&theme=0&si=df852c6c74cc40ec" 
                   width="100%" 
                   height="352" 
                   frameBorder="0" 

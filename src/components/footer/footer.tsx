@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+
 import { Reveal, fadeUp } from "@/components/ui/motion";
 
 /* ========================================================================
@@ -70,8 +70,7 @@ function LocationIcon() {
 }
 
 export function Footer() {
-  const pathname = usePathname();
-  if (pathname?.startsWith("/admin")) return null;
+
 
   return (
     <footer className="bg-black border-t border-white/20 pt-20 pb-36">
