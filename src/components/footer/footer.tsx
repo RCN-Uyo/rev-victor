@@ -69,6 +69,8 @@ function LocationIcon() {
   );
 }
 
+import { RvaLogo } from "@/components/ui/RvaLogo";
+
 export function Footer() {
 
 
@@ -83,9 +85,9 @@ export function Footer() {
           <div className="flex flex-col pr-4">
             <Reveal variants={fadeUp}>
               <div>
-                <h2 className="text-[22px] font-bold text-[#CEAA54] mb-2 tracking-wide font-serif">
-                  Rev Victor Anaele
-                </h2>
+                <div style={{ marginBottom: '16px' }}>
+                  <RvaLogo width={90} height={45} />
+                </div>
                 <p className="text-white/90 text-[14px] font-normal leading-relaxed">
                   Stay connected with God’s word!
                 </p>
@@ -93,19 +95,19 @@ export function Footer() {
             </Reveal>
 
             {/* Generous vertical gap to separate the sections */}
-            <div className="mt-24" />
+            <div style={{ height: '96px', width: '100%', flexShrink: 0 }} aria-hidden="true" />
 
             <Reveal variants={fadeUp} delay={0.1}>
               <div>
-                <h2 className="text-[22px] font-bold text-white mb-3 tracking-wide font-serif">
+                <h2 className="text-[22px] font-bold text-white tracking-wide font-serif" style={{ marginBottom: '16px' }}>
                   Follow Us
                 </h2>
-                <p className="text-white/80 text-[14px] leading-relaxed mb-5 max-w-[280px]">
+                <p className="text-white/80 text-[14px] leading-relaxed max-w-[280px]" style={{ marginBottom: '24px' }}>
                   Stay connected with our ministry through social media and receive updates on upcoming events and teachings.
                 </p>
                 
                 {/* Social Icons (Gold Circles with white vector paths) */}
-                <div className="flex gap-3">
+                <div className="flex" style={{ gap: '16px' }}>
                   {[
                     { icon: FacebookIcon, href: "#" },
                     { icon: XIcon, href: "#" },
@@ -129,15 +131,14 @@ export function Footer() {
               MIDDLE COLUMN: Quick Links (Spans 1/3 of the layout)
               ========================================= */}
           <Reveal variants={fadeUp} delay={0.1}>
-            <h3 className="text-[20px] font-bold text-white mb-6 tracking-wide font-serif">
+            <h3 className="text-[20px] font-bold text-white tracking-wide font-serif" style={{ marginBottom: '24px' }}>
               Quick Links
             </h3>
-            <ul className="space-y-[18px]">
+            <ul className="flex flex-col" style={{ gap: '12px' }}>
               {[
                 { label: "Home", href: "/" },
                 { label: "About", href: "/about" },
-                { label: "Media", href: "#media" },
-                { label: "Partnership", href: "#" },
+                { label: "Partnership", href: "/partner" },
                 { label: "Contact", href: "/contact" }
               ].map((link, i) => (
                 <li key={i}>
@@ -153,10 +154,10 @@ export function Footer() {
               RIGHT COLUMN: Contact Info (Spans 1/3 of the layout)
               ========================================= */}
           <Reveal variants={fadeUp} delay={0.2}>
-            <h3 className="text-[20px] font-bold text-white mb-6 tracking-wide font-serif">
+            <h3 className="text-[20px] font-bold text-white tracking-wide font-serif" style={{ marginBottom: '24px' }}>
               Contact Info
             </h3>
-            <ul className="space-y-[22px]">
+            <ul className="flex flex-col" style={{ gap: '16px' }}>
               <li className="flex items-center gap-3">
                 <span className="text-white shrink-0"><PhoneIcon /></span>
                 <span className="text-white text-[15px]">+234 8085 7510 765</span>

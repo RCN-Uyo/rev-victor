@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { RvaLogo } from "@/components/ui/RvaLogo";
 import {
   motion,
   AnimatePresence,
@@ -255,10 +256,10 @@ export function Navbar() {
               aria-label="Rev. Victor Anaele — Home"
             >
               <motion.span
-                className="gradient-text-gold text-2xl md:text-3xl font-bold tracking-tight origin-left"
-                style={{ fontFamily: "var(--font-heading)", scale: logoScale }}
+                className="origin-left"
+                style={{ scale: logoScale }}
               >
-                RVA
+                <RvaLogo width={80} height={40} />
               </motion.span>
               <motion.span
                 className="hidden text-[10px] sm:text-xs font-medium uppercase tracking-[0.2em] md:block text-secondary"
