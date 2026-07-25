@@ -75,17 +75,26 @@ export function RfsSection() {
             </Reveal>
 
             {/* Pillars Grid */}
-            <Stagger className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-4">
+            <Stagger className="grid grid-cols-1 sm:grid-cols-2" style={{ gap: '24px', marginTop: '24px' }}>
               {RFS_PILLARS.map((pillar, index) => (
                 <Reveal key={index} variants={fadeUp} delay={0.1 * index}>
-                  <div className="group flex flex-col gap-3 p-6 rounded-2xl bg-background border border-white/5 hover:border-gold/30 transition-all duration-300 hover:shadow-gold-sm">
-                    <div className="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center group-hover:bg-gold/20 transition-colors duration-300">
+                  <div 
+                    className="group flex flex-col rounded-[2rem] bg-black/40 border border-white/5 hover:border-gold/30 transition-all duration-500 hover:shadow-gold-sm"
+                    style={{ padding: '32px', gap: '16px' }}
+                  >
+                    <div 
+                      className="rounded-full bg-gold/10 flex items-center justify-center group-hover:bg-gold/20 transition-all duration-300 group-hover:-translate-y-1"
+                      style={{ width: '48px', height: '48px', flexShrink: 0 }}
+                    >
                       {pillar.icon}
                     </div>
-                    <h3 className="text-lg font-bold text-foreground tracking-wide mt-2">
+                    <h3 
+                      className="text-3xl font-serif text-white tracking-tight leading-tight group-hover:text-gold transition-colors duration-500 break-words hyphens-auto" 
+                      style={{ marginTop: '8px', wordBreak: 'break-word' }}
+                    >
                       {pillar.title}
                     </h3>
-                    <p className="text-sm text-secondary leading-relaxed">
+                    <p className="text-[15px] font-light text-white/70 leading-relaxed">
                       {pillar.description}
                     </p>
                   </div>
