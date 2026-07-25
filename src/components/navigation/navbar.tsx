@@ -20,7 +20,7 @@ const NAV_ITEMS = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Sermons", href: "/sermons" },
-  { label: "Conferences", href: "/conferences" },
+  { label: "Partnership", href: "/partner" },
   { label: "Contact", href: "/contact" },
 ] as const;
 
