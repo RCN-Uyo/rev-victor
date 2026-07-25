@@ -819,3 +819,12 @@ blockquote {
 .aspect-portrait { aspect-ratio: 3/4; }
 .aspect-wide { aspect-ratio: 21/9; }
 .aspect-ultrawide { aspect-ratio: 32/9; }
+
+/* Custom Animations */
+@keyframes kenburns {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); }
+}
+.animate-kenburns {
+  animation: kenburns 20s ease-in-out infinite alternate;
+}
