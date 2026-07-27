@@ -80,7 +80,7 @@ export default function AboutPage() {
             <div className="sticky top-32">
               <Reveal variants={fadeUp} delay={0.3} className="group relative aspect-[3/4] w-full rounded-2xl overflow-hidden border border-white/10 hover:shadow-[0_0_40px_rgba(206,170,84,0.25)] hover:border-gold/30 transition-all duration-700">
                 <Image
-                  src="/images/about-bw.jpg"
+                  src="/images/IMG-116.jpg"
                   alt="Rev. Victor Anaele"
                   fill
                   className="object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-700 animate-kenburns"

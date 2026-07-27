@@ -35,6 +35,18 @@ const JOURNEY_IMAGES = [
     alt: "Rev. Victor leading worship",
     className: "col-span-2 md:col-span-2 md:row-span-1 h-[200px] md:h-[288px]",
   },
+  {
+    id: 5,
+    src: "/images/IMG-103.jpg",
+    alt: "Rev Victor Ministering",
+    className: "col-span-1 md:col-span-2 md:row-span-1 h-[250px] md:h-[400px]",
+  },
+  {
+    id: 6,
+    src: "/images/IMG-110.jpg",
+    alt: "A moment of faith and encounters",
+    className: "col-span-1 md:col-span-2 md:row-span-1 h-[250px] md:h-[400px]",
+  }
 ];
 
 export function MinistryJourney() {

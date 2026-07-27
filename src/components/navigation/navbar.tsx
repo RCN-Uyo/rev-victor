@@ -20,7 +20,7 @@ import {
 const NAV_ITEMS = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
-
+  { label: "Gallery", href: "/gallery" },
   { label: "Partnership", href: "/partner" },
   { label: "Contact", href: "/contact" },
 ] as const;
