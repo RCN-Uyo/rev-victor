@@ -134,7 +134,7 @@ function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.6 }}
           >
-            <Button variant="primary" size="lg" href="/book-appointment" className="shadow-gold-lg w-full sm:w-auto">
+            <Button variant="primary" size="lg" href="https://docs.google.com/forms/d/e/1FAIpQLSdrmh_HfYbWS2YCl5308UqMNwoH-4092U8Jan0Oi8iWXov4sw/viewform" external={true} className="shadow-gold-lg w-full sm:w-auto">
               Book Appointment
             </Button>
           </motion.div>

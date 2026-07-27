@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Reveal, fadeUp, Stagger } from "@/components/ui/motion";
-import { Mail, Phone, MapPin, Send, MessageSquare, ChevronDown } from "lucide-react";
+import { Mail, Phone, MapPin, Send, MessageSquare, ChevronDown, Calendar } from "lucide-react";
 import { ContactForm } from "@/components/ui/ContactForm";
 
 export const metadata = {
@@ -16,10 +16,10 @@ const contactMethods = [
     action: "mailto:revvictoranaele@gmail.com"
   },
   {
-    title: "Call Us",
-    detail: "+234 8085 7510 765",
-    icon: Phone,
-    action: "tel:+23480857510765"
+    title: "Invitations",
+    detail: "Book Rev. Victor for an event",
+    icon: Calendar,
+    action: "https://docs.google.com/forms/d/e/1FAIpQLSdrmh_HfYbWS2YCl5308UqMNwoH-4092U8Jan0Oi8iWXov4sw/viewform"
   }
 ];
 
@@ -81,7 +81,12 @@ export default function ContactPage() {
                   {/* Subtle Background Glow on Hover */}
                   <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-gold/5 blur-[50px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
                   
-                  <a href={method.action} className="relative z-10 flex items-center gap-6">
+                  <a 
+                    href={method.action} 
+                    target={method.action.startsWith('http') ? "_blank" : undefined}
+                    rel={method.action.startsWith('http') ? "noopener noreferrer" : undefined}
+                    className="relative z-10 flex items-center gap-6"
+                  >
                     <div className="flex-shrink-0 w-20 h-20 rounded-full bg-gold/10 flex items-center justify-center text-gold group-hover:scale-110 group-hover:bg-gold group-hover:text-black transition-all duration-500">
                       <method.icon className="w-8 h-8" />
                     </div>

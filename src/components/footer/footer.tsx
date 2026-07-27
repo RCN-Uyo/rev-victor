@@ -43,6 +43,14 @@ function TikTokIcon() {
   );
 }
 
+function WhatsAppIcon() {
+  return (
+    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12.031 0C5.388 0 0 5.385 0 12.03c0 2.128.552 4.205 1.6 6.04L.014 24l6.09-1.597a11.972 11.972 0 005.927 1.571h.005c6.64 0 12.029-5.385 12.029-12.03S18.675 0 12.031 0zm.005 22.015a10 10 0 01-5.1-1.396l-.365-.217-3.791.994.996-3.699-.238-.378a9.972 9.972 0 01-1.527-5.31c0-5.518 4.49-10.012 10.021-10.012 2.673 0 5.187 1.042 7.078 2.935 1.89 1.892 2.932 4.406 2.932 7.08 0 5.522-4.494 10.003-10.006 10.003zm5.498-7.513c-.302-.15-1.786-.883-2.064-.984-.278-.101-.481-.151-.684.15-.202.302-.782.984-.96 1.185-.177.202-.354.227-.657.076-1.562-.774-2.825-1.924-3.704-3.32-.204-.326.17-.306.76-.89.076-.076.114-.15.152-.253.038-.101.019-.19-.019-.265-.038-.076-.684-1.646-.937-2.253-.247-.594-.497-.514-.684-.523-.178-.009-.38-.009-.583-.009-.202 0-.532.076-.811.378-.278.303-1.064 1.04-1.064 2.535 0 1.494 1.089 2.938 1.24 3.14.152.201 2.144 3.27 5.19 4.542.724.302 1.288.483 1.728.618.727.224 1.389.192 1.91.116.586-.085 1.786-.731 2.038-1.437.253-.706.253-1.313.178-1.438-.076-.125-.278-.2-.58-.35z" />
+    </svg>
+  );
+}
+
 /* --- Contact Icons (Filled White) ---------------------------------------- */
 
 function PhoneIcon() {
@@ -109,14 +117,16 @@ export function Footer() {
                 {/* Social Icons (Gold Circles with white vector paths) */}
                 <div className="flex" style={{ gap: '16px' }}>
                   {[
-                    { icon: FacebookIcon, href: "#" },
-                    { icon: XIcon, href: "#" },
-                    { icon: InstagramIcon, href: "#" },
-                    { icon: TikTokIcon, href: "#" }
+                    { icon: InstagramIcon, href: "https://www.instagram.com/revvictoranaele" },
+                    { icon: TikTokIcon, href: "https://www.tiktok.com/@revvictoranaele" },
+                    { icon: WhatsAppIcon, href: "https://chat.whatsapp.com/KeGZoAjdXWpGgZnGxzoSSp" },
+                    { icon: XIcon, href: "https://x.com/revvictoranaele" }
                   ].map((social, i) => (
                     <a 
                       key={i} 
                       href={social.href} 
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="w-[30px] h-[30px] rounded-full bg-[#CEAA54] hover:bg-[#E0C76E] flex items-center justify-center text-white transition-colors"
                     >
                       <social.icon />
@@ -158,10 +168,6 @@ export function Footer() {
               Contact Info
             </h3>
             <ul className="flex flex-col" style={{ gap: '16px' }}>
-              <li className="flex items-center gap-3">
-                <span className="text-white shrink-0"><PhoneIcon /></span>
-                <span className="text-white text-[15px]">+234 8085 7510 765</span>
-              </li>
               <li className="flex items-center gap-3">
                 <span className="text-white shrink-0"><MailIcon /></span>
                 <span className="text-white text-[15px]">revvictoranaele@gmail.com</span>
