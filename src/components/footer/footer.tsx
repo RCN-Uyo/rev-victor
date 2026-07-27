@@ -96,25 +96,11 @@ export function Footer() {
                 <div style={{ marginBottom: '16px' }}>
                   <RvaLogo width={90} height={45} />
                 </div>
-                <p className="text-white/90 text-[14px] font-normal leading-relaxed">
-                  Stay connected with God’s word!
-                </p>
-              </div>
-            </Reveal>
-
-            {/* Generous vertical gap to separate the sections */}
-            <div style={{ height: '96px', width: '100%', flexShrink: 0 }} aria-hidden="true" />
-
-            <Reveal variants={fadeUp} delay={0.1}>
-              <div>
-                <h2 className="text-[22px] font-bold text-white tracking-wide font-serif" style={{ marginBottom: '16px' }}>
-                  Follow Us
-                </h2>
-                <p className="text-white/80 text-[14px] leading-relaxed max-w-[280px]" style={{ marginBottom: '24px' }}>
+                <p className="text-white/70 text-[14px] font-normal leading-relaxed max-w-[280px]" style={{ marginBottom: '24px' }}>
                   Stay connected with our ministry through social media and receive updates on upcoming events and teachings.
                 </p>
                 
-                {/* Social Icons (Gold Circles with white vector paths) */}
+                {/* Social Icons */}
                 <div className="flex" style={{ gap: '16px' }}>
                   {[
                     { icon: InstagramIcon, href: "https://www.instagram.com/revvictoranaele" },
@@ -127,7 +113,7 @@ export function Footer() {
                       href={social.href} 
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-[30px] h-[30px] rounded-full bg-[#CEAA54] hover:bg-[#E0C76E] flex items-center justify-center text-white transition-colors"
+                      className="w-[36px] h-[36px] rounded-full bg-white/5 border border-white/10 hover:border-[#CEAA54] hover:bg-[#CEAA54]/10 flex items-center justify-center text-white hover:text-[#CEAA54] transition-all duration-300"
                     >
                       <social.icon />
                     </a>
@@ -141,7 +127,7 @@ export function Footer() {
               MIDDLE COLUMN: Quick Links (Spans 1/3 of the layout)
               ========================================= */}
           <Reveal variants={fadeUp} delay={0.1}>
-            <h3 className="text-[20px] font-bold text-white tracking-wide font-serif" style={{ marginBottom: '24px' }}>
+            <h3 className="text-[12px] uppercase tracking-[0.2em] font-bold text-[#CEAA54]" style={{ marginBottom: '24px' }}>
               Quick Links
             </h3>
             <ul className="flex flex-col" style={{ gap: '12px' }}>
@@ -153,7 +139,8 @@ export function Footer() {
                 { label: "Contact", href: "/contact" }
               ].map((link, i) => (
                 <li key={i}>
-                  <Link href={link.href} className="text-white hover:text-[#CEAA54] transition-colors text-[15px] font-normal">
+                  <Link href={link.href} className="text-white/70 hover:text-white transition-colors text-[14px] font-normal flex items-center group">
+                    <span className="w-0 h-[1px] bg-[#CEAA54] inline-block transition-all duration-300 group-hover:w-4 group-hover:mr-2"></span>
                     {link.label}
                   </Link>
                 </li>
@@ -165,17 +152,17 @@ export function Footer() {
               RIGHT COLUMN: Contact Info (Spans 1/3 of the layout)
               ========================================= */}
           <Reveal variants={fadeUp} delay={0.2}>
-            <h3 className="text-[20px] font-bold text-white tracking-wide font-serif" style={{ marginBottom: '24px' }}>
+            <h3 className="text-[12px] uppercase tracking-[0.2em] font-bold text-[#CEAA54]" style={{ marginBottom: '24px' }}>
               Contact Info
             </h3>
             <ul className="flex flex-col" style={{ gap: '16px' }}>
-              <li className="flex items-center gap-3">
-                <span className="text-white shrink-0"><MailIcon /></span>
-                <span className="text-white text-[15px]">revvictoranaele@gmail.com</span>
+              <li className="flex items-start gap-3">
+                <span className="text-[#CEAA54] shrink-0 mt-1"><MailIcon /></span>
+                <span className="text-white/70 text-[14px]">revvictoranaele@gmail.com</span>
               </li>
-              <li className="flex items-center gap-3">
-                <span className="text-white shrink-0"><LocationIcon /></span>
-                <span className="text-white text-[15px]">Uyo, Akwa Ibom State, Nigeria</span>
+              <li className="flex items-start gap-3">
+                <span className="text-[#CEAA54] shrink-0 mt-1"><LocationIcon /></span>
+                <span className="text-white/70 text-[14px]">Uyo, Akwa Ibom State, Nigeria</span>
               </li>
             </ul>
           </Reveal>
