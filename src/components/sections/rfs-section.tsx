@@ -107,7 +107,7 @@ export function RfsSection() {
                 <Button 
                   variant="primary" 
                   size="lg" 
-                  href="https://www.rfsuyo.com/registration"
+                  href="https://www.rfsuyo.com"
                   external
                 >
                   Enroll in RFS

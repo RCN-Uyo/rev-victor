@@ -43,16 +43,19 @@ export default function AboutPage() {
             {/* Biography */}
             <Reveal variants={fadeUp}>
               <div className="w-16 h-[2px] bg-gold mb-6" />
-              <h2 className="text-3xl md:text-4xl font-serif text-white mb-8">The Journey</h2>
+              <h2 className="text-3xl md:text-4xl font-serif text-white mb-8">About Rev'd Victor</h2>
               <div className="space-y-6 text-white/80 text-lg leading-relaxed font-light text-justify">
                 <p>
-                  Rev. Victor Ifeanyi Anaele stands as one of the vibrant apostolic voices emerging in Nigeria. He is the Resident Pastor of Remnant Christian Network (RCN), Uyo, a city to which the Lord divinely directed him after fruitful years of ministry service.
+                  Rev. Victor Ifeanyi Anaele is one of the vibrant apostolic voices emerging from Nigeria, carrying a burden for revival, transformation, and the restoration of God's eternal purpose in the Church. 
                 </p>
                 <p>
-                  Before his assignment in Uyo, he faithfully served as RCN's point man in Abia State, where he planted and nurtured apostolic centers. Rev. Victor Anaele has always carried a burden for regional transformation through the Gospel.
+                  He currently serves as the Resident Pastor of Remnant Christian Network (RCN), Uyo, a divine assignment entrusted to him by the Lord after years of fruitful ministry service. Before his assignment in Uyo, Rev. Victor faithfully served as RCN's point man in Abia State, where he pioneered and nurtured apostolic centers, laboring to establish altars of righteousness and raise a people consecrated unto God. 
                 </p>
                 <p>
-                  During his undergraduate years, he rose to serve as Faculty President of NIFES Calabar in the 2013-2014 session. These formative leadership roles deepened his hunger for revival and laid a strong foundation for his later apostolic calling.
+                  His ministry has consistently been marked by a passion to see territories transformed through the power of the Gospel. During his undergraduate years, he served as the Faculty President of the Nigerian Fellowship of Evangelical Students (NIFES), Calabar (2013–2014). 
+                </p>
+                <p>
+                  These formative years of leadership deepened his hunger for God and laid a strong foundation for his apostolic calling and lifelong commitment to revival and Kingdom advancement.
                 </p>
               </div>
             </Reveal>
@@ -65,10 +68,10 @@ export default function AboutPage() {
                 <h2 className="text-3xl md:text-4xl font-serif text-white mb-8">The Ministry</h2>
                 <div className="space-y-6 text-white/80 text-lg leading-relaxed font-light text-justify">
                   <p>
-                    In 2017, Rev. Victor joined the Remnant Christian Network under the apostolic leadership of Apostle Arome Osayi. His burden for raising altars of righteousness and restoring priesthood led him to pioneer and establish six RCN apostolic centers in strategic cities, including Aba, Owerri, Port Harcourt, Bayelsa, Umuahia, and now Uyo.
+                    In 2017, Rev. Victor Anaele joined the Remnant Christian Network under the apostolic leadership of Apostle Arome Osayi. Since then, he has faithfully served God's purpose by raising apostolic altars and equipping believers to walk in truth, power, and intimacy with God.
                   </p>
                   <p>
-                    Through these platforms, he has impacted countless lives, reviving a fresh hunger for God's presence and truth across the world. He is the convener of major intercessory gatherings such as the Eastern Watchmen Convergence and The Prophetic Convergence.
+                    Rev. Victor is also the convener of major intercessory and revival gatherings such as the Eastern Watchmen Convergence, The Prophetic and Intercessory Convergence and The Sounds of Truth Conference solely dedicated to causing an awakening in the hearts of men, raising watchmen, and advancing God's Kingdom agenda in the nations.
                   </p>
                 </div>
               </div>

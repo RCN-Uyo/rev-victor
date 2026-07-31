@@ -67,7 +67,7 @@ export function AboutSection() {
 
               <Reveal variants={fadeUp} delay={0.2}>
                 <p>
-                  His deep burden for raising altars of righteousness and restoring priesthood led him to pioneer and establish six RCN apostolic centers in strategic cities across the nation, including Aba, Owerri, Port Harcourt, Bayelsa, Umuahia, and now Uyo. He is the convener of major intercessory gatherings such as <em className="text-foreground">The Eastern Watchmen Convergence</em> and <em className="text-foreground">The Prophetic and Intercessors Convergence</em>.
+                  Driven by a profound passion to see territories transformed by the power of the Gospel, he labors tirelessly to establish altars of righteousness and equip a consecrated people unto God. He is the convener of major intercessory gatherings such as <em className="text-foreground">The Eastern Watchmen Convergence</em> and <em className="text-foreground">The Prophetic and Intercessors Convergence</em>.
                 </p>
               </Reveal>
 

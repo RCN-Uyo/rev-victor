@@ -90,7 +90,7 @@ function Hero() {
               alt={SLIDES[currentSlide].alt}
               fill
               priority
-              className="object-cover object-center"
+              className="object-cover object-[center_20%] sm:object-center"
               sizes="100vw"
             />
           </motion.div>

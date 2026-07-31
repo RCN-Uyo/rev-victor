@@ -11,27 +11,27 @@ export const metadata = {
 const partnershipOpportunities = [
   {
     title: "Ministry Partnership",
-    description: "Collaborate with us in establishing apostolic centers, organizing conferences, and spreading the Gospel across strategic locations.",
+    description: "Collaborate with us in advancing the Gospel through strategic ministry initiatives.",
     icon: Users,
-    items: ["Joint ministry events", "Apostolic center establishment", "Conference collaboration", "Evangelistic outreaches"]
+    items: ["Joint ministry events and conferences.", "Apostolic center establishment and support.", "Conference and crusade collaborations.", "Evangelistic and missionary outreaches."]
   },
   {
     title: "Financial Partnership",
-    description: "Support our ministry financially to help us reach more souls, establish training centers, and expand our apostolic influence.",
+    description: "Support the vision through your generous financial contributions to help expand the reach and impact of the ministry.",
     icon: Coins,
-    items: ["Monthly giving programs", "Project-specific funding", "Equipment and facility support", "Scholarship programs"]
+    items: ["Monthly partnership commitments.", "Project-specific funding initiatives.", "Equipment and facility support.", "Leadership and discipleship training sponsorships.", "Scholarship and missions support programs."]
   },
   {
     title: "Prayer Partnership",
-    description: "Join our intercessory network and become part of our prayer force who stand in the gap for revival and transformation.",
+    description: "Become part of our growing network of intercessors standing in the gap for revival, transformation, and Kingdom advancement.",
     icon: Flame,
-    items: ["Weekly prayer call", "Intercessory gathering", "Spiritual warfare support"]
+    items: ["Weekly prayer gatherings.", "Corporate intercessory meetings.", "Strategic prayer assignments.", "Revival and missions intercession initiatives."]
   },
   {
     title: "Skills Partnership",
-    description: "Contribute your professional skills and expertise to help us in areas like media, technology, administration, and more.",
+    description: "Use your gifts, skills, and professional expertise to strengthen the work of the ministry.",
     icon: Lightbulb,
-    items: ["Media and communications", "Technology and web services", "Administrative support", "Professional consulting"]
+    items: ["Media and communications support.", "Technology and web services.", "Administrative and operational assistance.", "Professional consulting and advisory services.", "Creative, design, and production support."]
   }
 ];
 
@@ -43,13 +43,23 @@ const mentorshipPillars = [
   },
   {
     title: "Spiritual Warfare",
-    description: "Practical guidance on prayer, intercession, and spiritual warfare.",
+    description: "A Practical guide in the ministry of prayer, intercession, and spiritual warfare.",
     icon: Shield
   },
   {
     title: "Leadership",
-    description: "Strategies for effective leadership and ministry development.",
+    description: "Leadership development and ministry training.",
     icon: GraduationCap
+  },
+  {
+    title: "Spiritual Formation",
+    description: "Spiritual formation for purposeful and impactful living.",
+    icon: Flame
+  },
+  {
+    title: "Personalized Counsel",
+    description: "Personalized counsel for growth in calling and assignment.",
+    icon: Users
   }
 ];
 
@@ -75,10 +85,12 @@ export default function PartnerPage() {
               <HeartHandshake className="w-10 h-10 md:w-12 md:h-12" />
             </div>
             <h1 className="text-4xl md:text-6xl font-bold font-serif text-white mb-4 text-center w-full">
-              Get <span className="text-gold">Involved</span>
+              Partner <span className="text-gold">With Us</span>
             </h1>
-            <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto font-light text-center w-full leading-relaxed">
-              Join hands with Rev. Victor Anaele in advancing God's Kingdom through strategic <br className="hidden md:block" /> partnerships and mentorship that will transform lives.
+            <p className="text-lg md:text-xl text-white/80 max-w-3xl mx-auto font-light text-center w-full leading-relaxed">
+              God's Kingdom advances through yielded hearts and faithful partnerships. We invite you to join hands with Rev. Victor Anaele as we labor together to transform lives, disciple nations, and establish God's purposes across Nigeria and beyond.
+              <br /><br className="hidden md:block" />
+              Your partnership enables us to reach more people with the Gospel, raise apostolic centers, equip believers, and sustain revival initiatives that impact communities and generations.
             </p>
           </Reveal>
         </div>
@@ -155,13 +167,13 @@ export default function PartnerPage() {
               
               <div className="text-white/80 font-light leading-relaxed">
                 <p>
-                  Our mentorship program is designed for individuals seeking to deepen their spiritual walk, discover their divine purpose, and develop their leadership potential.
+                  The mentorship ministry of Rev. Victor Anaele is designed for believers who desire to grow in spiritual maturity, discover their divine purpose, and develop effective Kingdom leadership.
                 </p>
                 
                 <div className="w-full h-2 flex-shrink-0" aria-hidden="true" />
                 
                 <p>
-                  Rev. Victor provides personalized guidance, drawing from years of experience and profound biblical insight.
+                  Through sound biblical teaching, spiritual impartation, and practical guidance, participants are equipped to live lives of influence and consecration. The mentorship experience includes:
                 </p>
               </div>
             </Reveal>
@@ -196,13 +208,15 @@ export default function PartnerPage() {
               <div>
                 <h3 className="text-4xl md:text-5xl font-serif text-white mb-6 drop-shadow-lg">Ready to Grow?</h3>
                 <p className="text-white/90 text-lg md:text-xl font-light mb-10">Join the next cohort of emerging leaders.</p>
-                <Link 
-                  href="/contact" 
+                <a 
+                  href="https://chat.whatsapp.com/KeGZoAjdXWpGgZnGxzoSSp"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-transparent border border-white/30 text-white font-medium rounded-full hover:bg-gold hover:border-gold hover:text-black hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-gold/30"
                   style={{ display: 'inline-block', padding: '1.25rem 3.5rem', whiteSpace: 'nowrap' }}
                 >
                   Apply for Mentorship
-                </Link>
+                </a>
               </div>
             </div>
           </Reveal>
@@ -229,8 +243,10 @@ export default function PartnerPage() {
             <div className="w-full h-3 flex-shrink-0" aria-hidden="true" />
 
             <div className="w-full flex justify-center">
-              <p className="text-white/60 font-light text-center" style={{ maxWidth: '42rem', textWrap: 'balance' }}>
-                Through strategic partnerships, we have been able to achieve remarkable milestones. Follow these simple steps to join our network.
+              <p className="text-white/60 font-light text-center" style={{ maxWidth: '48rem', textWrap: 'balance' }}>
+                Through strategic partnerships and faithful stewardship, lives have been transformed, apostolic centers have been established, and revival initiatives have continued to impact communities across regions. Together, we are raising watchmen, restoring priesthood, and advancing God's Kingdom.
+                <br /><br />
+                Joining our partnership family is simple:
               </p>
             </div>
 

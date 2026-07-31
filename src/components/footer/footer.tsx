@@ -51,6 +51,14 @@ function WhatsAppIcon() {
   );
 }
 
+function YoutubeIcon() {
+  return (
+    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+    </svg>
+  );
+}
+
 /* --- Contact Icons (Filled White) ---------------------------------------- */
 
 function PhoneIcon() {
@@ -103,10 +111,11 @@ export function Footer() {
                 {/* Social Icons */}
                 <div className="flex" style={{ gap: '16px' }}>
                   {[
-                    { icon: InstagramIcon, href: "https://www.instagram.com/revvictoranaele" },
-                    { icon: TikTokIcon, href: "https://www.tiktok.com/@revvictoranaele" },
+                    { icon: InstagramIcon, href: "https://www.instagram.com/revvictoranaele?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
+                    { icon: TikTokIcon, href: "https://www.tiktok.com/@revvictoranaele?is_from_webapp=1&sender_device=pc" },
                     { icon: WhatsAppIcon, href: "https://chat.whatsapp.com/KeGZoAjdXWpGgZnGxzoSSp" },
-                    { icon: XIcon, href: "https://x.com/revvictoranaele" }
+                    { icon: XIcon, href: "https://x.com/revvictoranaele" },
+                    { icon: YoutubeIcon, href: "https://www.youtube.com/@RevVictorAnaele" }
                   ].map((social, i) => (
                     <a 
                       key={i} 

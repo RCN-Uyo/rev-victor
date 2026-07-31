@@ -26,14 +26,16 @@ export function MediaCentre() {
           </Reveal>
         </div>
 
+        <div className="w-full h-10 flex-shrink-0" aria-hidden="true" />
+
         {/* Bento Grid layout with minimal empty space */}
         <Reveal variants={fadeUp} delay={0.3}>
           <div className="grid grid-cols-1 md:grid-cols-12 auto-rows-[minmax(180px,auto)] gap-4 md:gap-6">
             
             {/* Spotify Player (Spans 4 columns on desktop) */}
             <div className="md:col-span-12 lg:col-span-4 rounded-3xl overflow-hidden bg-surface-elevated border border-white/5 hover:border-gold/30 transition-all duration-500 shadow-lg flex flex-col">
-              <div className="p-6 pb-0">
-                <h3 className="text-xl font-bold text-white mb-2">Apostolic Voice Podcast</h3>
+              <div className="p-5 md:p-6 pb-0">
+                <h3 className="text-xl font-bold text-white mb-2 break-words">Apostolic Voice Podcast</h3>
                 <p className="text-sm text-secondary mb-4">Stream the latest messages on the go.</p>
               </div>
               <div className="p-4 flex-grow flex items-end">
@@ -41,14 +43,13 @@ export function MediaCentre() {
                 <iframe 
                   data-testid="embed-iframe"
                   style={{ borderRadius: '12px' }} 
-                  src="https://open.spotify.com/embed/show/6QIPH4mdOqeCOgtPI419SG?utm_source=generator&theme=0&si=df852c6c74cc40ec" 
+                  src="https://open.spotify.com/embed/show/6QIPH4mdOqeCOgtPI419SG?utm_source=generator&theme=0&si=af43a84e1f724402" 
                   width="100%" 
-                  height="352" 
                   frameBorder="0" 
                   allowFullScreen 
                   allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
                   loading="lazy"
-                  className="w-full"
+                  className="w-full h-[152px] md:h-[352px]"
                 ></iframe>
               </div>
             </div>
