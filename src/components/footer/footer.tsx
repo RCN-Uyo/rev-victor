@@ -171,7 +171,7 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-[#CEAA54] shrink-0 mt-1"><LocationIcon /></span>
-                <span className="text-white/70 text-[14px]">Uyo, Akwa Ibom State, Nigeria</span>
+                <span className="text-white/70 text-[14px]">29 Umo Essien Street, Uyo 520102, Akwa Ibom</span>
               </li>
             </ul>
           </Reveal>
